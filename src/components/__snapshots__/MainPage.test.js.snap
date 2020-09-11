@@ -3,3 +3,5 @@
 exports[`it filters robots correctly 1`] = `ShallowWrapper {}`;
 
 exports[`renders MainPage without crash 1`] = `ShallowWrapper {}`;
+
+exports[`renders MainPage without crashing 1`] = `ShallowWrapper {}`;
