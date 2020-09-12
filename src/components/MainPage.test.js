@@ -56,3 +56,22 @@ it('filters robots correctly 2', () => {
     const wrapper3 = shallow(<MainPage {...mockProps3} />)
     expect(wrapper3.instance().filterRobots()).toEqual(FilteredRobots);
 })
+
+
+it('filters robots correctly 3', () => {
+    
+    const mockProps4 = {
+        onRequestRobots: jest.fn(),
+        robots: [{
+            id: 3,
+            name: 'John',
+            email: 'john@gmail.com'
+        }],
+        searchField: 'a',
+        isPending: true
+    }
+    const FilteredRobots2 = [
+    ]
+    const wrapper4 = shallow(<MainPage {...mockProps4} />)
+    expect(wrapper4.instance().filterRobots()).toEqual(FilteredRobots2);
+})
